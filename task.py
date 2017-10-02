@@ -1,12 +1,12 @@
 import csv
 with open('Crime.csv') as myfile:
 
- reader=csv.reader(myfile)
+ reader=csv.reader(myfile,delimiter=',')
  a=[]
  b=[] 
  for row in reader:
-  a=list(row)
-  a.append(a)
+  a=strip(row)
+  c=list(a)
 
-  b.append(a[::1])
+  b.append(c[::1])
   print(b)
